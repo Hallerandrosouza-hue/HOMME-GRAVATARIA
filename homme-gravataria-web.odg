@@ -1,0 +1,20 @@
+homme-gravataria-web/
+│
+├── assets/
+│   ├── images/
+│   │   ├── banners/
+│   │   │   ├── banner-hero-elegancia-que-impoe.jpg       (A imagem horizontal com o texto)
+│   │   │   └── banner-mobile-homme.jpg                  (A imagem vertical de capa)
+│   │   ├── catalogo/
+│   │   │   └── menu-catalogo-principal.jpg              (A imagem com a lista de itens)
+│   │   └── logo/
+│   │       ├── logo-homme-gravataria.png
+│   │       └── icone-monograma-hg.png                   (O símbolo dourado HG)
+│   │
+│   ├── css/
+│   │   └── style.css
+│   └── js/
+│       └── main.js
+│
+├── index.html
+└── README.md

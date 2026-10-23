@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOMME GRAVATARIA | Hércules Gravataria — Moda Masculina Executiva & Alfaiataria</title>
+  <meta
+    name="description"
+    content="Catálogo oficial HOMME GRAVATARIA (Hércules Gravataria). Gravatas Linha Supreme, Toque de Seda 8cm, Xadrez Premium, Camisas Slim Fit Fibra de Bambu, Cintos Catraca em Couro Legítimo e Acessórios."
+  />
+
+  <!-- Google Fonts: Cormorant Garamond (Alfaiataria Clássica) & Plus Jakarta Sans (E-commerce UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Folha de Estilo Principal -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ====================================================================
+       1. TOPBAR INSTITUCIONAL
+       ==================================================================== -->
+  <div class="topbar" role="region" aria-label="Avisos Institucionais">
+    <div class="container topbar__inner">
+      <ul class="topbar__list">
+        <li class="topbar__item">
+          <span>✦</span>
+          <span>Envio Rápido para Todo o Brasil — <strong>Atacado & Varejo</strong></span>
+        </li>
+        <li class="topbar__item">
+          <span>✦</span>
+          <span>Garantia de Qualidade <strong>Alta Alfaiataria</strong></span>
+        </li>
+        <li class="topbar__item">
+          <span>✦</span>
+          <span>Condições Especiais para <strong>Padrinhos, Congressos e Corporativo</strong></span>
+        </li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap;">
+        <a
+          href="https://www.instagram.com/hommegravataria?psln=MWN0YTExMXdiNDR2YQ=="
+          target="_blank"
+          rel="noopener noreferrer"
+          class="topbar__cta"
+          title="Siga @hommegravataria no Instagram"
+        >
+          <span>Instagram @hommegravataria</span>
+        </a>
+        <a
+          href="https://wa.me/558981424736?text=Ol%C3%A1!%20Gostaria%20de%20atendimento%20personalizado%20na%20HOMME%20GRAVATARIA."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="topbar__cta"
+        >
+          <span>WhatsApp: +55 89 8142-4736 →</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       2. HEADER / BARRA DE NAVEGAÇÃO (ESTILO CIA DO TERNO)
+       ==================================================================== -->
+  <header class="site-header">
+    <div class="container header-main">
+      <!-- Logo Central / Esquerda -->
+      <a href="#topo" class="brand-logo" aria-label="HOMME GRAVATARIA - Página Inicial">
+        <div class="brand-logo__monogram" aria-hidden="true">HG</div>
+        <div class="brand-logo__text">
+          <span class="brand-logo__title">HOMME <span>GRAVATARIA</span></span>
+          <span class="brand-logo__subtitle">Hércules Gravataria • Alfaiataria</span>
+        </div>
+      </a>
+
+      <!-- Barra de Busca Rápida -->
+      <div class="header-search" role="search">
+        <input
+          type="search"
+          id="catalog-search-input"
+          class="header-search__input"
+          placeholder="Buscar por gravata jacquard, camisa bambu, cinto catraca, cor..."
+          aria-label="Buscar produtos no catálogo"
+        />
+        <button type="button" class="header-search__btn" aria-label="Pesquisar">
+          🔍
+        </button>
+      </div>
+
+      <!-- Ações Rápidas: Instagram, Catálogo Geral e Carrinho / Orçamento -->
+      <div class="header-actions">
+        <a
+          href="https://www.instagram.com/hommegravataria?psln=MWN0YTExMXdiNDR2YQ=="
+          target="_blank"
+          rel="noopener noreferrer"
+          class="header-action-link"
+          title="Instagram Oficial @hommegravataria"
+        >
+          <span>📸 @hommegravataria</span>
+        </a>
+        <a href="#catalogo-institucional" class="header-action-link">
+          <span>📋 Índice do Catálogo</span>
+        </a>
+        <button type="button" class="cart-trigger" id="open-cart-btn" aria-label="Abrir orçamento e carrinho">
+          <span>Meu Pedido</span>
+          <span class="cart-trigger__badge" id="cart-count-badge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menu Categorizado -->
+    <nav class="header-nav" aria-label="Navegação de Categorias">
+      <div class="container nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item">
+            <button
+              type="button"
+              class="nav-menu__btn is-active"
+              data-filter-category="todos"
+              data-scroll-to-catalog
+            >
+              Toda a Coleção
+            </button>
+          </li>
+
+          <!-- Menu Gravatas com Subcategorias Mapeadas -->
+          <li class="nav-menu__item">
+            <button
+              type="button"
+              class="nav-menu__btn"
+              data-filter-category="gravatas"
+              data-scroll-to-catalog
+            >
+              Gravatas ▾
+            </button>
+            <div class="nav-dropdown" role="menu">
+              <button
+                type="button"
+                class="nav-dropdown__btn"
+                data-filter-category="gravatas"
+                data-filter-subcategory="gravata-supreme"
+                data-scroll-to-catalog
+              >
+                <span>Linha Supreme (Jacquard)</span>
+                <span class="nav-dropdown__price">R$ 29,90</span>
+              </button>
+              <button
+                type="button"
+                class="nav-dropdown__btn"
+                data-filter-category="gravatas"
+                data-filter-subcategory="gravata-seda"
+                data-scroll-to-catalog
+              >
+                <span>Toque de Seda 8cm</span>
+                <span class="nav-dropdown__price">R$ 29,90</span>
+              </button>
+              <button
+                type="button"
+                class="nav-dropdown__btn"
+                data-filter-category="gravatas"
+                data-filter-subcategory="gravata-xadrez"
+                data-scroll-to-catalog
+              >
+                <span>Xadrez Premium</span>
+                <span class="nav-dropdown__price">R$ 29,90</span>
+              </button>
+              <button
+                type="button"
+                class="nav-dropdown__btn"
+                data-filter-category="gravatas"
+                data-filter-subcategory="gravata-lisa"
+                data-scroll-to-catalog
+              >
+                <span>Lisas (Eventos & Padrinhos)</span>
+                <span class="nav-dropdown__price">R$ 20,00</span>
+              </button>
+            </div>
+          </li>
+
+          <li class="nav-menu__item">
+            <button
+              type="button"
+              class="nav-menu__btn"
+              data-filter-category="camisas"
+              data-scroll-to-catalog
+            >
+              Camisas Fibra de Bambu
+            </button>
+          </li>
+
+          <li class="nav-menu__item">
+            <button
+              type="button"
+              class="nav-menu__btn"
+              data-filter-category="cintos"
+              data-scroll-to-catalog
+            >
+              Cintos Catraca Couro
+            </button>
+          </li>
+
+          <li class="nav-menu__item">
+            <button
+              type="button"
+              class="nav-menu__btn"
+              data-filter-category="acessorios"
+              data-scroll-to-catalog
+            >
+              Acessórios (Prendedores)
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <!-- ====================================================================
+         3. ÁREA HERO (DESTAQUE PRINCIPAL - "ELEGÂNCIA QUE IMPÕE")
+         ==================================================================== -->
+    <section class="hero-section" aria-label="Destaque Principal">
+      <div class="hero-banner">
+        <div class="hero-banner__media">
+          <img
+            id="hero-landscape-img"
+            class="hero-banner__img"
+            src="hercules-gravataria-foto%20pricipais/ac4da71b-43b9-45a7-aa41-22b22b79095f.jpg"
+            alt="Banner Hero Landscape - HOMME GRAVATARIA Elegância que Impõe"
+          />
+          <div class="hero-banner__overlay"></div>
+        </div>
+
+        <div class="container hero-banner__content">
+          <div class="hero-copy">
+            <span class="hero-copy__eyebrow">Coleção Executiva & Alfaiataria</span>
+            <h1 class="hero-copy__title">
+              Elegância <em>que Impõe</em> em Cada Detalhe.
+            </h1>
+            <p class="hero-copy__description">
+              Da camisaria nobre em Fibra Natural de Bambu às gravatas maquinetadas 1200 fios e cintos em couro legítimo com catraca automática. A assinatura definitiva do homem de presença.
+            </p>
+            <div class="hero-copy__actions">
+              <a href="#vitrine-produtos" class="btn-primary">
+                Explorar Vitrine Completa
+              </a>
+              <a href="#categorias-destaque" class="btn-outline-light">
+                Ver Departamentos
+              </a>
+            </div>
+          </div>
+
+          <!-- Card lateral com as lâminas verticais da pasta principal -->
+          <aside class="hero-showcase-card" aria-label="Identidade Visual e Catálogo Hércules Gravataria">
+            <div class="hero-showcase-card__grid">
+              <a href="#catalogo-institucional" class="hero-showcase-card__thumb" title="Ver Identidade Visual Homme Gravataria">
+                <img
+                  id="hero-thumb-brand"
+                  src="hercules-gravataria-foto%20pricipais/454a2f0e-28c2-41b2-8e12-6e5eff620af5.jpg"
+                  alt="HOMME GRAVATARIA Identidade Visual"
+                />
+              </a>
+              <a href="#catalogo-institucional" class="hero-showcase-card__thumb" title="Ver Índice Completo Hércules Gravataria">
+                <img
+                  id="hero-thumb-catalog"
+                  src="hercules-gravataria-foto%20pricipais/27ced7d8-ef75-4fe2-b110-4f5b26b8573f.jpg"
+                  alt="Catálogo Hércules Gravataria"
+                />
+              </a>
+            </div>
+            <div class="hero-showcase-card__caption">
+              <span><strong>HOMME GRAVATARIA</strong> • Catálogo Oficial</span>
+              <a href="#vitrine-produtos" style="color: var(--color-gold-light); font-weight: 700;">38 Itens →</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. FAIXA DE CREDIBILIDADE & DIFERENCIAIS
+         ==================================================================== -->
+    <section class="trust-bar" aria-label="Diferenciais da Marca">
+      <div class="container trust-bar__grid">
+        <div class="trust-item">
+          <div class="trust-item__icon">🎋</div>
+          <div>
+            <div class="trust-item__title">Fibra Natural de Bambu</div>
+            <div class="trust-item__desc">Camisas Slim Fit leves, antibacterianas e passa fácil</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__icon">👔</div>
+          <div>
+            <div class="trust-item__title">Gravataria 1200 Fios & Seda</div>
+            <div class="trust-item__desc">Nó encorpado em linhas Supreme, Xadrez, Seda 8cm e Lisas</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__icon">🛡️</div>
+          <div>
+            <div class="trust-item__title">Couro Legítimo Catraca</div>
+            <div class="trust-item__desc">Ajuste milimétrico sem furos e fivelas em metal nobre</div>
+          </div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__icon">💬</div>
+          <div>
+            <div class="trust-item__title">Pedido Direto no WhatsApp</div>
+            <div class="trust-item__desc">Monte seu carrinho e envie o orçamento pronto em 1 clique</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. SEÇÃO DE CATEGORIAS EM DESTAQUE
+         ==================================================================== -->
+    <section id="categorias-destaque" class="section-block" aria-labelledby="heading-categorias">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-header__eyebrow">Departamentos Exclusivos</p>
+            <h2 id="heading-categorias" class="section-header__title">Categorias em Destaque</h2>
+            <p class="section-header__subtitle">
+              Selecione uma linha abaixo para filtrar imediatamente a vitrine de produtos.
+            </p>
+          </div>
+        </div>
+
+        <div class="featured-categories-grid">
+          <!-- Card 1: Gravatas (Supreme, Seda, Xadrez, Lisas) -->
+          <article
+            class="category-card"
+            data-filter-category="gravatas"
+            data-scroll-to-catalog
+            role="button"
+            tabindex="0"
+          >
+            <img
+              class="category-card__img"
+              src="Gravata%20Linha%20Supreme%20-%2029.90/WhatsApp%20Image%202026-10-23%20at%2010.32.37.jpeg"
+              alt="Gravataria Premium Homme Gravataria"
+              loading="lazy"
+            />
+            <div class="category-card__overlay">
+              <span class="category-card__tag">22 Padronagens Disponíveis</span>
+              <h3 class="category-card__title">Gravataria Nobre</h3>
+              <p class="category-card__meta">Supreme, Toque de Seda 8cm, Xadrez e Lisas • A partir de R$ 20,00</p>
+              <span class="category-card__cta">Ver Gravatas →</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Camisaria Fibra de Bambu -->
+          <article
+            class="category-card"
+            data-filter-category="camisas"
+            data-scroll-to-catalog
+            role="button"
+            tabindex="0"
+          >
+            <img
+              class="category-card__img"
+              src="Camisa%20Slim%20Fit%20Fibra%20de%20Bambu%20-%20144.90/WhatsApp%20Image%202026-10-23%20at%2010.39.30.jpeg"
+              alt="Camisa Slim Fit Fibra de Bambu"
+              loading="lazy"
+            />
+            <div class="category-card__overlay">
+              <span class="category-card__tag">7 Cores Executivas</span>
+              <h3 class="category-card__title">Camisas Fibra de Bambu</h3>
+              <p class="category-card__meta">Modelagem Slim Fit Anatômica • R$ 144,90</p>
+              <span class="category-card__cta">Ver Camisaria →</span>
+            </div>
+          </article>
+
+          <!-- Card 3: Cintos Catraca Couro Legítimo -->
+          <article
+            class="category-card"
+            data-filter-category="cintos"
+            data-scroll-to-catalog
+            role="button"
+            tabindex="0"
+          >
+            <img
+              class="category-card__img"
+              src="Cinto%20Catraca%20Premium%20Couro%20Legitimo%20-%2044.90/WhatsApp%20Image%202026-10-23%20at%2010.44.09%20(1).jpeg"
+              alt="Cinto Catraca Premium Couro Legítimo"
+              loading="lazy"
+            />
+            <div class="category-card__overlay">
+              <span class="category-card__tag">6 Modelos de Fivela</span>
+              <h3 class="category-card__title">Cintos Catraca Couro</h3>
+              <p class="category-card__meta">Couro Legítimo com Trava Automática • R$ 44,90</p>
+              <span class="category-card__cta">Ver Cintos →</span>
+            </div>
+          </article>
+
+          <!-- Card 4: Acessórios & Joalheria de Lapela -->
+          <article
+            class="category-card"
+            data-filter-category="acessorios"
+            data-scroll-to-catalog
+            role="button"
+            tabindex="0"
+          >
+            <img
+              class="category-card__img"
+              src="Prendedor%20de%20Gravata%20Metalico%20-%209.90/WhatsApp%20Image%202026-10-23%20at%2010.47.27.jpeg"
+              alt="Prendedor de Gravata Metálico"
+              loading="lazy"
+            />
+            <div class="category-card__overlay">
+              <span class="category-card__tag">Prata Ródio & Dourado</span>
+              <h3 class="category-card__title">Acessórios & Lapela</h3>
+              <p class="category-card__meta">Prendedores Metálicos Atacado & Varejo • R$ 9,90</p>
+              <span class="category-card__cta">Ver Acessórios →</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. GRID DE PRODUTOS (VITRINE E-COMMERCE MAPEADA DAS PASTAS LOCAIS)
+         ==================================================================== -->
+    <section id="vitrine-produtos" class="section-block" style="padding-top: 1rem;" aria-labelledby="heading-vitrine">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-header__eyebrow">Catálogo Oficial Mapeado</p>
+            <h2 id="heading-vitrine" class="section-header__title">Vitrine de Produtos</h2>
+            <p class="section-header__subtitle">
+              Clique nas miniaturas de cada card para alternar entre as fotos e cores da mesma pasta ou adicione múltiplos itens ao seu orçamento.
+            </p>
+          </div>
+        </div>
+
+        <!-- Barra de Filtros Rápidos e Alternador de Visualização -->
+        <div class="catalog-toolbar">
+          <div class="filter-pills" role="tablist" aria-label="Filtrar produtos por seção">
+            <button type="button" class="filter-pill is-active" data-filter-category="todos">
+              Todos
+            </button>
+            <button type="button" class="filter-pill" data-filter-category="camisas">
+              Camisas Bambu (R$ 144,90)
+            </button>
+            <button type="button" class="filter-pill" data-filter-category="cintos">
+              Cintos Catraca (R$ 44,90)
+            </button>
+            <button
+              type="button"
+              class="filter-pill"
+              data-filter-category="gravatas"
+              data-filter-subcategory="gravata-supreme"
+            >
+              Gravata Supreme (R$ 29,90)
+            </button>
+            <button
+              type="button"
+              class="filter-pill"
+              data-filter-category="gravatas"
+              data-filter-subcategory="gravata-seda"
+            >
+              Toque de Seda 8cm (R$ 29,90)
+            </button>
+            <button
+              type="button"
+              class="filter-pill"
+              data-filter-category="gravatas"
+              data-filter-subcategory="gravata-xadrez"
+            >
+              Gravata Xadrez (R$ 29,90)
+            </button>
+            <button
+              type="button"
+              class="filter-pill"
+              data-filter-category="gravatas"
+              data-filter-subcategory="gravata-lisa"
+            >
+              Gravata Lisa (R$ 20,00)
+            </button>
+            <button type="button" class="filter-pill" data-filter-category="acessorios">
+              Prendedores (R$ 9,90)
+            </button>
+          </div>
+
+          <div class="catalog-controls">
+            <select
+              id="whatsapp-template-select"
+              class="template-select"
+              aria-label="Modelo de mensagem para o WhatsApp"
+              title="Escolha o estilo da mensagem automática enviada ao clicar em Pedir pelo WhatsApp"
+            >
+              <option value="opcao3">Mensagem WhatsApp: Universal do Site (Opção 3)</option>
+              <option value="opcao1">Mensagem WhatsApp: Elegante & Consultiva (Opção 1)</option>
+              <option value="opcao2">Mensagem WhatsApp: Dúvida Rápida / Estoque (Opção 2)</option>
+            </select>
+            <div class="view-mode-toggle" role="group" aria-label="Modo de exibição da vitrine">
+              <button type="button" class="view-mode-btn is-active" data-view-mode="expanded">
+                Todas as Peças (38)
+              </button>
+              <button type="button" class="view-mode-btn" data-view-mode="grouped">
+                Agrupar por Pasta (7)
+              </button>
+            </div>
+            <span class="catalog-count" id="catalog-count">38 itens encontrados</span>
+          </div>
+        </div>
+
+        <!-- Container Dinâmico de Produtos -->
+        <div class="products-grid" id="products-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. SEÇÃO INSTITUCIONAL & CATÁLOGO GERAL (BANNERS DA PASTA PRINCIPAL)
+         ==================================================================== -->
+    <section id="catalogo-institucional" class="institutional-section" aria-labelledby="heading-institucional">
+      <div class="container institutional-grid">
+        <div class="institutional-poster">
+          <img
+            id="brand-vertical-img"
+            src="hercules-gravataria-foto%20pricipais/454a2f0e-28c2-41b2-8e12-6e5eff620af5.jpg"
+            alt="Identidade Visual HOMME GRAVATARIA"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="institutional-poster">
+          <img
+            id="catalog-overview-img"
+            src="hercules-gravataria-foto%20pricipais/27ced7d8-ef75-4fe2-b110-4f5b26b8573f.jpg"
+            alt="Catálogo Geral Hércules Gravataria"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="institutional-info">
+          <p class="institutional-info__eyebrow">Tradição & Presença Executiva</p>
+          <h2 id="heading-institucional" class="institutional-info__title">
+            Hércules Gravataria • Linha Completa de Alfaiataria
+          </h2>
+          <p class="institutional-info__desc">
+            Atendemos cavalheiros exigentes, noivos, padrinhos, congregações e empresas com curadoria completa de camisaria, gravataria e acessórios metálicos. Consulte também pelo WhatsApp os demais itens especiais listados em nosso encarte oficial:
+          </p>
+
+          <ul class="catalog-checklist">
+            <li>Gravatas Premium | Florais</li>
+            <li>Gravatas Xadrez</li>
+            <li>Gravatas Lisas</li>
+            <li>Camisas Fibra de Bambu</li>
+            <li>Bottons Instrumentos</li>
+            <li>Broche de Lapela</li>
+            <li>Prendedores de Gravata e Hinário</li>
+            <li>Cintos Catraca em Couro</li>
+            <li>Cinto Esticador</li>
+            <li>Extensor de Colarinho</li>
+            <li>Lenços de Bolso</li>
+          </ul>
+
+          <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+            <a
+              href="https://wa.me/558981424736?text=Ol%C3%A1!%20Vi%20o%20encarte%20completo%20da%20H%C3%A9rcules%20Gravataria%20e%20gostaria%20de%20consultar%20todos%20os%20itens."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+            >
+              WhatsApp: +55 89 8142-4736
+            </a>
+            <a
+              href="https://www.instagram.com/hommegravataria?psln=MWN0YTExMXdiNDR2YQ=="
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline-light"
+            >
+              Siga @hommegravataria no Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       8. FOOTER EXECUTIVO
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-logo__monogram">HG</div>
+            <div class="brand-logo__text">
+              <span class="brand-logo__title">HOMME <span>GRAVATARIA</span></span>
+              <span class="brand-logo__subtitle">Hércules Gravataria</span>
+            </div>
+          </div>
+          <p style="font-size: 0.85rem; line-height: 1.6;">
+            Moda masculina executiva e alta gravataria. Elegância que impõe em cada detalhe, com atendimento ágil direto pelo WhatsApp e novidades diárias no Instagram.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Gravataria</h3>
+          <ul class="footer-links">
+            <li><a href="#vitrine-produtos" data-filter-category="gravatas" data-filter-subcategory="gravata-supreme">Gravata Linha Supreme — R$ 29,90</a></li>
+            <li><a href="#vitrine-produtos" data-filter-category="gravatas" data-filter-subcategory="gravata-seda">Toque de Seda 8cm — R$ 29,90</a></li>
+            <li><a href="#vitrine-produtos" data-filter-category="gravatas" data-filter-subcategory="gravata-xadrez">Gravata Xadrez Premium — R$ 29,90</a></li>
+            <li><a href="#vitrine-produtos" data-filter-category="gravatas" data-filter-subcategory="gravata-lisa">Gravata Lisa Eventos — R$ 20,00</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Camisaria & Couro</h3>
+          <ul class="footer-links">
+            <li><a href="#vitrine-produtos" data-filter-category="camisas">Camisa Slim Fit Fibra de Bambu — R$ 144,90</a></li>
+            <li><a href="#vitrine-produtos" data-filter-category="cintos">Cinto Catraca Couro Legítimo — R$ 44,90</a></li>
+            <li><a href="#vitrine-produtos" data-filter-category="acessorios">Prendedor de Gravata Metálico — R$ 9,90</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-col__title">Central de Atendimento</h3>
+          <ul class="footer-links">
+            <li>Atendimento Varejo, Atacado e Padrinhos</li>
+            <li>
+              <a
+                href="https://wa.me/558981424736?text=Ol%C3%A1!%20Gostaria%20de%20atendimento%20na%20HOMME%20GRAVATARIA."
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: var(--color-gold-light); font-weight: 700;"
+              >
+                💬 WhatsApp: +55 89 8142-4736
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/hommegravataria?psln=MWN0YTExMXdiNDR2YQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: var(--color-gold-light); font-weight: 700;"
+              >
+                📸 Instagram: @hommegravataria
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 HOMME GRAVATARIA (Hércules Gravataria). Todos os direitos reservados.</span>
+        <span>Arquitetura Front-end E-commerce • Moda Masculina Executiva</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       9. DRAWER LATERAL: CARRINHO / CHECKOUT DIRETO PARA WHATSAPP
+       ==================================================================== -->
+  <div class="cart-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de Orçamento WhatsApp">
+    <div class="cart-drawer__header">
+      <h2 class="cart-drawer__title">Seu Pedido / Orçamento</h2>
+      <button type="button" class="cart-drawer__close" id="close-cart-btn" aria-label="Fechar carrinho">
+        ✕
+      </button>
+    </div>
+
+    <div class="cart-drawer__items" id="cart-drawer-items"></div>
+
+    <div class="cart-drawer__footer">
+      <div class="cart-customer-notes">
+        <label for="customer-name-input">Seu Nome (opcional para o resumo no WhatsApp):</label>
+        <input
+          type="text"
+          id="customer-name-input"
+          placeholder="Ex.: Pr. Marcos / Ricardo Almeida"
+        />
+      </div>
+
+      <div class="cart-summary-row">
+        <span>Total Estimado:</span>
+        <span id="cart-total-value">R$ 0,00</span>
+      </div>
+
+      <button type="button" class="btn-checkout-whatsapp" id="checkout-whatsapp-btn">
+        <span>Enviar Pedido Completo no WhatsApp</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Scripts Modulares -->
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
