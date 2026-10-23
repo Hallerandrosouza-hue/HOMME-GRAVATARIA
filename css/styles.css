@@ -234,30 +234,38 @@ ul {
   place-items: center;
 }
 
-/* Ações do Header (Instagram / Catálogo / Meu Pedido) */
+/* Ações do Header (Logos Oficiais Instagram & WhatsApp + Meu Pedido) */
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.55rem;
   flex-shrink: 0;
 }
 
-.header-action-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.8rem;
-  color: #e2dfd7;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+.header-icon-btn {
+  width: 38px;
+  height: 38px;
+  display: inline-grid;
+  place-items: center;
+  color: #f0ede6;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: var(--radius-sm);
-  white-space: nowrap;
   transition: all var(--transition);
 }
 
-.header-action-link:hover {
-  border-color: var(--color-gold-primary);
-  color: var(--color-gold-light);
+.header-icon-btn--instagram:hover {
+  border-color: #e1306c;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(131, 58, 180, 0.35), rgba(225, 48, 108, 0.35), rgba(253, 29, 29, 0.3));
+  transform: translateY(-1px);
+}
+
+.header-icon-btn--whatsapp:hover {
+  border-color: #25d366;
+  color: #25d366;
+  background-color: rgba(37, 211, 102, 0.12);
+  transform: translateY(-1px);
 }
 
 .cart-trigger {
@@ -1522,14 +1530,18 @@ ul {
     letter-spacing: 0.12em;
   }
 
-  /* Esconde botões secundários no header mobile para caber na linha da logo sem rolagem lateral */
-  .header-action-link {
-    display: none;
+  .header-actions {
+    gap: 0.4rem;
+  }
+
+  .header-icon-btn {
+    width: 34px;
+    height: 34px;
   }
 
   .cart-trigger {
-    padding: 0.48rem 0.75rem;
-    font-size: 0.76rem;
+    padding: 0.48rem 0.7rem;
+    font-size: 0.75rem;
     gap: 0.35rem;
   }
 
