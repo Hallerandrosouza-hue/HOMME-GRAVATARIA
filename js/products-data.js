@@ -14,42 +14,19 @@ const STORE_CONFIG = {
   instagramHandle: "@hommegravataria",
   currency: "BRL",
   freeShippingThreshold: 199.90,
-  defaultWhatsappTemplate: "opcao3", // "opcao1" (Elegante/Consultiva), "opcao2" (Rápida/Suporte), "opcao3" (Universal Botão do Site)
+  defaultWhatsappTemplate: "simples",
   whatsappTemplates: {
-    opcao1: {
-      label: "Opção 1: Elegante e Consultiva (Catálogo/Instagram)",
-      buildMessage: ({ productName, variationName, codeRef, priceFormatted }) =>
+    simples: {
+      label: "Mensagem Simples e Direta",
+      buildMessage: ({ productName, variationName, priceFormatted }) =>
         [
-          `Olá! Estava conferindo as peças da HOMME GRAVATARIA no catálogo/Instagram e gostei muito de um item:`,
-          `• Item: ${productName} (${priceFormatted})`,
-          `• Modelo / Cor: ${variationName}`,
-          `• Referência: ${codeRef}`,
+          `Olá! Vim pelo catálogo da *HOMME GRAVATARIA* e tenho interesse nesta peça:`,
           ``,
-          `Gostaria de verificar com você a disponibilidade desse modelo para envio imediato!`
-        ].join("\n")
-    },
-    opcao2: {
-      label: "Opção 2: Atendimento Rápido e Suporte (Estoque)",
-      buildMessage: ({ productName, variationName, codeRef, priceFormatted }) =>
-        [
-          `Olá, tudo bem? Vi a publicação deste modelo no perfil da HOMME GRAVATARIA e gostaria de tirar uma dúvida sobre ele:`,
-          `• Peça de interesse: ${productName} (${priceFormatted})`,
-          `• Variação: ${variationName}`,
-          `• Referência: ${codeRef}`,
+          `• *Peça:* ${productName}`,
+          `• *Cor / Modelo:* ${variationName}`,
+          `• *Valor:* ${priceFormatted}`,
           ``,
-          `Vocês ainda têm essa opção em estoque no momento?`
-        ].join("\n")
-    },
-    opcao3: {
-      label: "Opção 3: Universal para Botão do Site (Padrão)",
-      buildMessage: ({ productName, variationName, codeRef, priceFormatted }) =>
-        [
-          `Olá! Vim pelo catálogo online da HOMME GRAVATARIA e tenho interesse na seguinte peça:`,
-          `• Produto: ${productName} (${priceFormatted})`,
-          `• Detalhe/Cor: ${variationName}`,
-          `• Código: ${codeRef}`,
-          ``,
-          `Poderia me confirmar a disponibilidade e prazos de entrega?`
+          `Poderia me confirmar se está disponível?`
         ].join("\n")
     }
   }

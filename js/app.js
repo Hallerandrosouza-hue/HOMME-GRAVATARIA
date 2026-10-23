@@ -561,34 +561,23 @@ function closeCartDrawer() {
 }
 
 /**
- * Envia um único produto diretamente para o WhatsApp usando os templates oficiais (Opção 1, 2 ou 3)
+ * Envia um único produto diretamente para o WhatsApp com mensagem limpa e direta
+ * informando apenas a peça, a cor/modelo escolhido e o valor.
  */
 function sendSingleItemToWhatsApp(productItem, variation) {
   const productName = productItem.shortTitle || productItem.title;
   const variationName = variation.name;
-  const fileName = variation.image.split("/").pop();
-  const codeRef = `${productItem.sku} | Foto: ${fileName}`;
   const priceFormatted = formatCurrencyBRL(productItem.price);
 
-  const templates = STORE_CONFIG.whatsappTemplates || {};
-  const activeTemplate =
-    templates[AppState.whatsappTemplateKey] || templates.opcao3;
-
-  const messageText = activeTemplate
-    ? activeTemplate.buildMessage({
-        productName,
-        variationName,
-        codeRef,
-        priceFormatted
-      })
-    : [
-        `Olá! Vim pelo catálogo online da HOMME GRAVATARIA e tenho interesse na seguinte peça:`,
-        `• Produto: ${productName}`,
-        `• Detalhe/Cor: ${variationName}`,
-        `• Código: ${codeRef}`,
-        ``,
-        `Poderia me confirmar a disponibilidade e prazos de entrega?`
-      ].join("\n");
+  const messageText = [
+    `Olá! Vim pelo catálogo da *HOMME GRAVATARIA* e tenho interesse nesta peça:`,
+    ``,
+    `• *Peça:* ${productName}`,
+    `• *Cor / Modelo:* ${variationName}`,
+    `• *Valor:* ${priceFormatted}`,
+    ``,
+    `Poderia me confirmar se está disponível?`
+  ].join("\n");
 
   const url = `https://wa.me/${STORE_CONFIG.whatsappNumber}?text=${encodeURIComponent(messageText)}`;
   window.open(url, "_blank", "noopener,noreferrer");
